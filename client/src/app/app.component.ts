@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
     this.setCurrentUser();
   }
 
+  // tslint:disable-next-line:typedef
   setCurrentUser() {
     const user: User = JSON.parse(localStorage.getItem('user'));
     this.accountservice.setCurrentUser(user);
